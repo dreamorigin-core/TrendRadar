@@ -112,7 +112,13 @@ weight:
   rank_weight: 0.6 # 排名权重
   frequency_weight: 0.3 # 频次权重
   hotness_weight: 0.1 # 热度权重
-
+  
+mcp_server:
+  enabled: true
+  provider: "siliconflow"  # 指定使用硅胶流动
+  api_key: "sk-blibmhzvkwtayjmknapcvhesifjuxsyxkvxznrdlrjecqkzw"  # 替换为你的硅胶流动 API 密钥
+  model: "Qwen/Qwen2.5-7B-Instruct"  # 或其他硅胶流动支持的模型
+  base_url: "https://api.siliconflow.cn/v1"  # 硅胶流动的 API 端点
 # name 可以定义任意名称，只具有显示作用，即使项目运行了几天后，忽然改掉 name 也不会影响代码的正常运行
 platforms:
   - id: "toutiao"
